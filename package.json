@@ -4,7 +4,7 @@
   "description": "A backend http server for the Open JSNAD Certification Mock Exam",
   "main": "index.js",
   "scripts": {
-    "test": "test",
+    "test": "mocha",
     "dev": "nodemon index.js"
   },
   "author": "Brandon Perez",
@@ -17,5 +17,10 @@
     "joi": "^17.13.3",
     "mongodb": "^6.13.0",
     "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "chai": "^5.1.2",
+    "mocha": "^11.1.0",
+    "supertest": "^7.0.0"
   }
 }
