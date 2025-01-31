@@ -100,9 +100,9 @@ app.post('/form', (req, res)=> {
   res.send(`Form submitted with name: ${name} and age: ${age}`)
 })
 
-app.listen(process.env.PORT || 3000, () => {
+const server = app.listen(process.env.PORT || 3000, () => {
   console.log(`Server running on port ${process.env.PORT || 3000}`)
 })
 
-// export app so we can test
-module.exports = app;
+// export so we can test
+module.exports = {app, server};
